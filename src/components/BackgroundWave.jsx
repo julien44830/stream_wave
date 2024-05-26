@@ -1,4 +1,6 @@
-function TestBackground() {
+
+
+function BackgroundWave() {
     return (
         <video
             autoPlay
@@ -14,4 +16,4 @@ function TestBackground() {
     );
 }
 
-export default TestBackground;
+export default BackgroundWave;
