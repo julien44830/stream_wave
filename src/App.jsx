@@ -1,12 +1,14 @@
 import BackgroundWave from "./components/BackgroundWave";
-import "./styles/global.css"
+import Navbar from "./components/NavBar";
+import "./styles/global.css";
 
 function App() {
-    return (
-        <>
-            <BackgroundWave />
-        </>
-    );
+  return (
+    <>
+      <Navbar />
+      <BackgroundWave />
+    </>
+  );
 }
 
 export default App;

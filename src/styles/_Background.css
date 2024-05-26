@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("../assets/backTest.png") no-repeat;
+    background-size: 100vw;
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow: hidden;
+}
+.stargate__portal {
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+video {
+    /* z-index: 0; */
+    width: 100%;
+    height: 100%;
+
+    /* animation: portal-animation 15s infinite; */
+    opacity: 0.15;
+}
+
+/* oL1QoPwrSVa9Y4_TyELl8g 2 */
+/* @keyframes portal-animation {
+    
+    0% {
+      filter: hue-rotate(0deg) contrast(3) saturate(1);
+    }
+    
+    50% {
+      filter: hue-rotate(45deg) contrast(1) saturate(6);
+    }
+    
+    100% {
+      filter: hue-rotate(0deg) contrast(3) saturate(1);
+    }
+    
+  } */
+
+/**
+   * Housekeeping
+   * ------------
+  */
