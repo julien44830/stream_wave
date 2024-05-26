@@ -1,9 +1,10 @@
-import TestBackground from "./assets/components/TestBackground";
+import BackgroundWave from "./components/BackgroundWave";
+import "./styles/global.css"
 
 function App() {
     return (
         <>
-            <TestBackground />
+            <BackgroundWave />
         </>
     );
 }
