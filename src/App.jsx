@@ -1,11 +1,14 @@
-import TestBackground from "./assets/components/TestBackground";
+import TestBackground from "./components/TestBackground";
+import Navbar from "./components/NavBar";
+import "./styles/Global.css";
 
 function App() {
-    return (
-        <>
-            <TestBackground />
-        </>
-    );
+  return (
+    <>
+      <Navbar />
+      <TestBackground />
+    </>
+  );
 }
 
 export default App;

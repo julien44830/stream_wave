@@ -1,5 +1,3 @@
-import '../styles/test-background.css'
-
 function TestBackground() {
     return (
         <video
