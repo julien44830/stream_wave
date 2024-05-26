@@ -1,5 +1,11 @@
+import TestBackground from "./assets/components/TestBackground";
+
 function App() {
-    return <></>;
+    return (
+        <>
+            <TestBackground />
+        </>
+    );
 }
 
 export default App;
