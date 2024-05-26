@@ -1,12 +1,12 @@
-import TestBackground from "./components/TestBackground";
+import BackgroundWave from "./components/BackgroundWave";
 import Navbar from "./components/NavBar";
-import "./styles/Global.css";
+import "./styles/global.css";
 
 function App() {
   return (
     <>
       <Navbar />
-      <TestBackground />
+      <BackgroundWave />
     </>
   );
 }

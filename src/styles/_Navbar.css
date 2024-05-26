@@ -1,6 +1,49 @@
-nav{
-display: flex;
-width : auto ;
-height: 10vh;
-background-color: aquamarine;
+@import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Cedarville+Cursive&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Danfo&family=La+Belle+Aurore&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playball&family=Playpen+Sans:wght@100..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Whisper&display=swap");
+
+nav {
+  display: flex;
+  width: auto;
+  height: 15vh;
+}
+
+#logo {
+  width: auto;
+  height: 80px;
+}
+
+#title_page {
+  font-size: 50px;
+  font-family: "La Belle Aurore", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+  width: 530px;
+  height: 80px;
+
+  text-align: center;
+  letter-spacing: 0.24em;
+
+  color: #fcb26d;
+
+  text-shadow: 0px 8px 0px #112c55;
+  padding-right: 30rem;
+}
+
+#nav_link {
+  font-size: 50px;
+  font-family: "La Belle Aurore", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+  width: auto;
+  height: 80px;
+
+  text-align: center;
+  letter-spacing: 0.24em;
+
+  color: #fcb26d;
+
+  text-shadow: 0px 8px 0px #112c55;
+  padding-right: 1rem;
+  text-decoration: none;
 }
