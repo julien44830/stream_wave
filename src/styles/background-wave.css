@@ -1,7 +1,7 @@
 video {
-  z-index: -1;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  opacity: 0.15;
+    z-index: -1;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    opacity: 0.15;
 }

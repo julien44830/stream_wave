@@ -1,0 +1,53 @@
+.section-select-style-music {
+    border: 1px solid black;
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+
+    /* !a modifier/supprimer en ajoutant le composant de l'image  */
+    margin-left: 1000px;
+    /* ! ******************************************************** */
+}
+
+.select-style-music {
+    margin-bottom: 100px;
+    height: 100px;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+    background-color: #be8d68;
+}
+
+.list-station {
+}
+
+.station-ul {
+    border-radius: 10px;
+    list-style: none;
+    overflow-y: scroll;
+    height: 400px;
+}
+
+.station-li {
+    background-color: #be8d68;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+/* * scrollBar */
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    scrollbar-width: auto;
+    border: 1px solid black;
+    border-radius: 8px;
+    background: #34264ca8;
+}
