@@ -1,4 +1,12 @@
+import { useLoaderData } from "react-router-dom";
+import StationName from "./StationName";
+
 function MusicStyleSelect() {
+
+    const radioList = useLoaderData();
+    console.log(radioList);
+
+
     return (
         <section className="section-select-style-music">
             <select
@@ -22,51 +30,11 @@ function MusicStyleSelect() {
 
             <div className="list-station">
                 <ul className="station-ul scroller">
-                    <a href="">
-                        <li className="station-li">station 1</li>
-                    </a>
-                    <a href="">
-                        <li className="station-li">station 2</li>
-                    </a>
-                    <a href="">
-                        <li className="station-li">station 3</li>
-                    </a>
-                    <a href="">
-                        <li className="station-li">station 4</li>
-                    </a>
-                    <a href="">
-                        <li className="station-li">station 5</li>
-                    </a>
-                    <a href="">
-                        <li className="station-li">station 6</li>
-                    </a>
-                    <a href="">
-                        <li className="station-li">station 7</li>
-                    </a>
-                    <a href="">
-                        <li className="station-li">station 8</li>
-                    </a>
-                    <a href="">
-                        <li className="station-li">station 9</li>
-                    </a>
-                    <a href="">
-                        <li className="station-li">station 10</li>
-                    </a>
-                    <a href="">
-                        <li className="station-li">station 11</li>
-                    </a>
-                    <a href="">
-                        <li className="station-li">station 12</li>
-                    </a>
-                    <a href="">
-                        <li className="station-li">station 13</li>
-                    </a>
-                    <a href="">
-                        <li className="station-li">station 14</li>
-                    </a>
-                    <a href="">
-                        <li className="station-li">station 15</li>
-                    </a>
+                    {radioList.map((item) => (
+                        <li key={item.changeuuid} className="station-li">
+                            <StationName name={item.name} url={item.url_resolved}/>
+                        </li>
+                    ))}
                 </ul>
             </div>
         </section>
