@@ -1,9 +1,13 @@
-function StationName({name, url}){
-    return (
-        <figure>
-            <a href={url}>{name}</a>
-        </figure>
-    )
+import React from "react";
+
+
+function StationName({ name, url, onPlay }) {
+
+  return (
+    <figure>
+      <p onClick={() => onPlay(url)}>{name}</p>
+    </figure>
+  );
 }
 
 export default StationName;
