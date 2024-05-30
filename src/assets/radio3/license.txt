@@ -1,0 +1,11 @@
+Model Information:
+* title:	Vintage Radio
+* source:	https://sketchfab.com/3d-models/vintage-radio-8f1edd8724a54eebb8e689be3a9884f5
+* author:	RiZoRuS77 (https://sketchfab.com/RiZoRuS77)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Vintage Radio" (https://sketchfab.com/3d-models/vintage-radio-8f1edd8724a54eebb8e689be3a9884f5) by RiZoRuS77 (https://sketchfab.com/RiZoRuS77) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

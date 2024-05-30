@@ -1,0 +1,15 @@
+.section-3D-select-radio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+
+.canvas-3D {
+    width: 47% !important;
+    height: 600px !important;
+}
+
+.canvas-3D > div > canvas{
+    height:  100% !important;
+}
