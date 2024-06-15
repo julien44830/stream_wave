@@ -3,7 +3,7 @@ import BackgroundWave from "./components/BackgroundWave";
 import Navbar from "./components/NavBar";
 import { Outlet } from "react-router-dom"
 // import MusicStyleSelect from "./components/MusicStytleSelect";
-import "./styles/global.css";
+import "./styles/Global.css";
 
 function App() {
   return (

@@ -4,12 +4,9 @@ import StationName from "./StationName";
 
 function MusicStyleSelect() {
     const radioList = useLoaderData();
-    // console.log(radioList);
 
     const [selectedStation, setSelectedStation] = useState("");
-    const [Tag, setTag] = useState("");
-    console.log('%c⧭', 'color: #ff0000', Tag);
-
+    const [tag, setTag] = useState("pop");
 
     const choiseTag = (event) =>{
         setTag(event.target.value)
@@ -19,7 +16,7 @@ function MusicStyleSelect() {
       setSelectedStation(url);
     };
 
-    
+    const filteredList = radioList.filter(item => item.tags.includes(tag));
 
     return (
         <section className="section-select-style-music">
@@ -30,22 +27,22 @@ function MusicStyleSelect() {
                 onChange={choiseTag}
             >
                 <option value="pop">Pop</option>
-                <option value="Rock">Rock</option>
-                <option value="Hip-Hop/Rap">Hip-Hop/Rap</option>
-                <option value="Electro/Dance">Electro/Dance</option>
-                <option value="Jazz">Jazz</option>
-                <option value="Classique">Classique</option>
-                <option value="Country">Country</option>
-                <option value="Reggae">Reggae</option>
-                <option value="Blues">Blues</option>
-                <option value="Soual/Funk">Soual/Funk</option>
-                <option value="Latine">Latine</option>
-                <option value="Metal">Metal</option>
+                <option value="rock">Rock</option>
+                <option value="hip-hop">Hip-Hop/Rap</option>
+                <option value="dance">Electro/Dance</option>
+                <option value="jazz">Jazz</option>
+                <option value="classical">Classique</option>
+                <option value="country">Country</option>
+                <option value="reggae">Reggae</option>
+                <option value="blues">Blues</option>
+                <option value="funk">Soual/Funk</option>
+                <option value="latin">Latine</option>
+                <option value="metal">Metal</option>
             </select>
 
             <div className="list-station">
                 <ul className="station-ul scroller">
-                    {radioList.map((item) => (
+                    {filteredList.map((item) => (
                         <li
                             key={item.changeuuid}
                             className="station-li"
