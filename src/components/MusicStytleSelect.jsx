@@ -8,15 +8,16 @@ function MusicStyleSelect() {
     const [selectedStation, setSelectedStation] = useState("");
     const [tag, setTag] = useState("pop");
 
-    const choiseTag = (event) =>{
-        setTag(event.target.value)
-    }
-
-    const handlePlay = (url) => {
-      setSelectedStation(url);
+    const choiseTag = (event) => {
+        setTag(event.target.value);
     };
 
-    const filteredList = radioList.filter(item => item.tags.includes(tag));
+    const handlePlay = (url) => {
+        setSelectedStation(url);
+        console.log("%c⧭", "color: #733d00", selectedStation);
+    };
+
+    const filteredList = radioList.filter((item) => item.tags.includes(tag));
 
     return (
         <section className="section-select-style-music">
@@ -58,18 +59,20 @@ function MusicStyleSelect() {
             </div>
 
             {selectedStation && (
-                <div className="audio-player">
+                <figure className="audio-player">
                     <audio
+                        key={selectedStation}
                         controls
                         autoPlay
+                        preload="none"
                     >
                         <source
                             src={selectedStation}
                             type="audio/mpeg"
                         />
-                        Votre navigateur ne supporte pas l'élément audio.
+                        <p>Votre navigateur ne supporte pas l'élément audio.</p>
                     </audio>
-                </div>
+                </figure>
             )}
         </section>
     );
