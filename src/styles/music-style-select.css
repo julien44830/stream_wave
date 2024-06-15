@@ -3,10 +3,6 @@
     width: 30%;
     text-align: center;
     padding: 20px;
-
-    /* !a modifier/supprimer en ajoutant le composant de l'image  */
-    margin-left: 1000px;
-    /* ! ******************************************************** */
 }
 
 .select-style-music {
