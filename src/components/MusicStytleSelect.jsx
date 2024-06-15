@@ -4,9 +4,16 @@ import StationName from "./StationName";
 
 function MusicStyleSelect() {
     const radioList = useLoaderData();
-    console.log(radioList);
+    // console.log(radioList);
 
     const [selectedStation, setSelectedStation] = useState("");
+    const [Tag, setTag] = useState("");
+    console.log('%c⧭', 'color: #ff0000', Tag);
+
+
+    const choiseTag = (event) =>{
+        setTag(event.target.value)
+    }
 
     const handlePlay = (url) => {
       setSelectedStation(url);
@@ -20,19 +27,20 @@ function MusicStyleSelect() {
                 name=""
                 id=""
                 className="select-style-music"
+                onChange={choiseTag}
             >
-                <option value="">Pop</option>
-                <option value="">Rock</option>
-                <option value="">Hip-Hop/Rap</option>
-                <option value="">Electro/Dance</option>
-                <option value="">Jazz</option>
-                <option value="">Classique</option>
-                <option value="">Country</option>
-                <option value="">Reggae</option>
-                <option value="">Blues</option>
-                <option value="">Soual/Funk</option>
-                <option value="">Latine</option>
-                <option value="">Metal</option>
+                <option value="pop">Pop</option>
+                <option value="Rock">Rock</option>
+                <option value="Hip-Hop/Rap">Hip-Hop/Rap</option>
+                <option value="Electro/Dance">Electro/Dance</option>
+                <option value="Jazz">Jazz</option>
+                <option value="Classique">Classique</option>
+                <option value="Country">Country</option>
+                <option value="Reggae">Reggae</option>
+                <option value="Blues">Blues</option>
+                <option value="Soual/Funk">Soual/Funk</option>
+                <option value="Latine">Latine</option>
+                <option value="Metal">Metal</option>
             </select>
 
             <div className="list-station">
